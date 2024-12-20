@@ -1,12 +1,12 @@
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/6fee99af-08de-459c-9617-f6e9f333d809" alt="HydraPanel Logo">
+    <img src="" alt="LightPanel Logo">
 </p>
-<h2> HydraPanel is an open source panel for managing your game servers, applications and more built with modern technologies such as Node.js, Docker and Express - made to work with our HydraDaemon software.</h2>
+<h2> LightPanel is an open source panel for managing your game servers, applications and more built with modern technologies such as Node.js, Docker and Express - made to work with our LightDaemon software.</h2>
 
 ## Installation
 ### Picking a Server OS
 
-HydraPanel runs on a wide range of operating systems, so pick whichever you are most comfortable using.
+LightPanel runs on a wide range of operating systems, so pick whichever you are most comfortable using.
 
 | Operating System | Version |     Supported      | Notes                                                       |
 |------------------|---------|:------------------:|-------------------------------------------------------------|
@@ -39,15 +39,29 @@ sudo apt update
 sudo apt install -y nodejs git
 ```
 
+## Node.js Latest Installation
+
+1. Install nvm & configure:
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+```
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+2. Install Node.js Latest Version:
+```bash
+nvm install node
+```
+
 ## Installation
 
-The following commands will download the Hydra Panel into /etc/hydra and use npm to install the required packages:
+The following commands will download the Light Panel into /etc/panel and use npm to install the required packages:
 
 ``` bash
 cd /etc
-git clone https://github.com/hydren-dev/HydraPanel
-mv HydraPanel hydra
-cd hydra
+git clone https://github.com/LightCloudLabs/panel.git
+cd panel
 npm install
 ```
 
@@ -62,13 +76,31 @@ npm run createUser
 
 ### Setup Complete
 
-All you need to do now is start HydraPanel:
+All you need to do now is start LightPanel:
 ``` bash
 node .
+```
+
+### Running with pm2 (Optional)
+
+1. Install pm2:
+```bash
+npm install pm2 -g
+```
+2. Start the application using pm2:
+```bash
+pm2 start index.js --name "light"
+```
+3. Set up pm2 to auto-start on server reboot:
+```
+pm2 save
+pm2 startup
 ```
 
 Your Panel will now be accessible from port 3001 (unless you changed it in `config.json`).
 
 # Credits
-- Skyport (EOL)
-- SRYDEN (https://sryden.com)
+- **Skyport** (EOL)
+- [**SRYDEN**](https://sryden.com)
+- [**HydraLabs**](https://github.com/HydraLabs-beta)
+- [**LightCloud Team**](https://discord.gg/bTKrswWCgH)
