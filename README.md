@@ -99,6 +99,9 @@ pm2 startup
 
 Your Panel will now be accessible from port 3001 (unless you changed it in `config.json`).
 
+### LightDaemon:
+* [**DAEMON**](https://github.com/LightCloudLabs/daemon)
+
 # Credits
 - **Skyport** (EOL)
 - [**SRYDEN**](https://sryden.com)
