@@ -4,6 +4,6 @@
     "domain": "localhost",
     "mode": "production",
     "version": "0.1.1",
-    "ogTitle": "HydraPanel",
-    "ogDescription": "This is an instance of the HydraPanel - learn more at github.com/hydren-dev/HydraPanel"
+    "ogTitle": "LightPanel",
+    "ogDescription": "This is an instance of the LightPanel - learn more at github.com/LightCloudLabs/panel"
 } 
