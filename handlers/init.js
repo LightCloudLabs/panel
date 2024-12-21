@@ -5,7 +5,7 @@ const CatLoggr = require('cat-loggr');
 const log = new CatLoggr();
 
 async function init() {
-    const HydraPanel = await db.get('LightPanel_instance');
+    const LightPanel = await db.get('LightPanel_instance');
     if (!LightPanel) {
         log.init('this is probably your first time starting LightPanel, welcome!');
         log.init('you can find documentation for the panel at undefined');
@@ -18,11 +18,11 @@ async function init() {
             process.exit();
         }
 
-        let HydraPanelID = uuidv4();
+        let LightPanelID = uuidv4();
         let setupTime = Date.now();
         
         let info = {
-            HydraPanelID: HydraPanelID,
+            LightPanelID: LightPanelID,
             setupTime: setupTime,
             originalVersion: config.version
         }
