@@ -1,6 +1,5 @@
 <p align="center">
-    <img src="public/assets
-/panellogo.png" alt="LightPanel Logo">
+    <img src="https://cdn.discordapp.com/attachments/1320063512034148452/1320248085787578378/Screenshot_20241222-103416.png?ex=6768e858&is=676796d8&hm=8147721c9411083340ac48b44095754a3e61e12755b8c1589431d415e4363cfc&">
 </p>
 <h2> LightPanel is an open source panel for managing your game servers, applications and more built with modern technologies such as Node.js, Docker and Express - made to work with our LightDaemon software.</h2>
 
